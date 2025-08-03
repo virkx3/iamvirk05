@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --primary: #0a192f;
-            --secondary: #64ffda;
-            --accent: #ff2e63;
-            --light: #ccd6f6;
-            --dark: #020c1b;
-            --gray: #8892b0;
+            --primary: #0078d7;
+            --secondary: #00b7c3;
+            --accent: #ff6b6b;
+            --light: #e6f7ff;
+            --dark: #004b87;
+            --gray: #89a2c0;
             --transition: all 0.3s ease;
-            --card-bg: rgba(20, 40, 70, 0.7);
+            --card-bg: rgba(255, 255, 255, 0.1);
         }
 
         * {
@@ -29,6 +29,7 @@
             color: var(--light);
             line-height: 1.6;
             overflow-x: hidden;
+            min-height: 100vh;
         }
 
         .container {
@@ -43,16 +44,16 @@
             top: 0;
             width: 100%;
             z-index: 1000;
-            background: rgba(10, 25, 47, 0.95);
+            background: rgba(0, 56, 101, 0.95);
             backdrop-filter: blur(10px);
             padding: 20px 0;
             transition: var(--transition);
-            border-bottom: 1px solid rgba(100, 255, 218, 0.1);
+            border-bottom: 1px solid rgba(0, 183, 195, 0.2);
         }
 
         .header-scrolled {
             padding: 15px 0;
-            box-shadow: 0 5px 20px rgba(2, 12, 27, 0.4);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
         }
 
         .nav-container {
@@ -71,7 +72,7 @@
             width: 45px;
             height: 45px;
             border-radius: 50%;
-            background: url('https://instagram.fdel25-4.fna.fbcdn.net/v/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?stp=dst-jpg_s320x320&_nc_ht=instagram.fdel25-4.fna.fbcdn.net&_nc_cat=1&_nc_ohc=Z2XwU3Qw4gwAX9KbF3U&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfD7eLd0Vl8x8C6tVtFQyCvYJ3P6f0wV5k8I0B8iS3cFZ0aA&oe=64F3C0F2&_nc_sid=8b3546') center/cover;
+            background: #0078d7 url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="%230078d7"/><text x="12" y="16" font-family="Arial" font-size="12" fill="white" text-anchor="middle">VS</text></svg>') center/cover;
             border: 2px solid var(--secondary);
         }
 
@@ -190,7 +191,7 @@
 
         .btn-primary {
             background: var(--secondary);
-            color: var(--primary);
+            color: var(--dark);
             border: 2px solid var(--secondary);
         }
 
@@ -198,7 +199,7 @@
             background: transparent;
             color: var(--secondary);
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(100, 255, 218, 0.3);
+            box-shadow: 0 10px 25px rgba(0, 183, 195, 0.3);
         }
 
         .btn-secondary {
@@ -208,9 +209,9 @@
         }
 
         .btn-secondary:hover {
-            background: rgba(100, 255, 218, 0.1);
+            background: rgba(0, 183, 195, 0.1);
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(100, 255, 218, 0.3);
+            box-shadow: 0 10px 25px rgba(0, 183, 195, 0.3);
         }
 
         .hero-img {
@@ -221,9 +222,9 @@
             width: clamp(300px, 35vw, 400px);
             height: clamp(300px, 35vw, 400px);
             border-radius: 50%;
-            background: linear-gradient(145deg, rgba(10, 25, 47, 0.8), rgba(2, 12, 27, 0.9));
-            border: 15px solid rgba(100, 255, 218, 0.1);
-            box-shadow: 0 0 50px rgba(100, 255, 218, 0.2);
+            background: linear-gradient(145deg, rgba(0, 56, 101, 0.8), rgba(0, 75, 135, 0.9));
+            border: 15px solid rgba(0, 183, 195, 0.1);
+            box-shadow: 0 0 50px rgba(0, 183, 195, 0.2);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -234,14 +235,83 @@
             width: 85%;
             height: 85%;
             border-radius: 50%;
-            background: url('https://instagram.fdel25-4.fna.fbcdn.net/v/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?stp=dst-jpg_s320x320&_nc_ht=instagram.fdel25-4.fna.fbcdn.net&_nc_cat=1&_nc_ohc=Z2XwU3Qw4gwAX9KbF3U&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfD7eLd0Vl8x8C6tVtFQyCvYJ3P6f0wV5k8I0B8iS3cFZ0aA&oe=64F3C0F2&_nc_sid=8b3546') center/cover;
+            background: #0078d7 url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="%230078d7"/><text x="12" y="16" font-family="Arial" font-size="12" fill="white" text-anchor="middle">VS</text></svg>') center/cover;
             border: 5px solid var(--secondary);
-            box-shadow: 0 0 30px rgba(100, 255, 218, 0.3);
+            box-shadow: 0 0 30px rgba(0, 183, 195, 0.3);
+        }
+
+        /* Robot animations */
+        .robot {
+            position: absolute;
+            z-index: 1;
+            pointer-events: none;
+        }
+        
+        .robot-1 {
+            top: 15%;
+            left: 5%;
+            width: 80px;
+            animation: floatRobot 15s infinite ease-in-out;
+        }
+        
+        .robot-2 {
+            top: 30%;
+            right: 8%;
+            width: 60px;
+            animation: floatRobot 18s infinite ease-in-out;
+            animation-delay: 2s;
+        }
+        
+        .robot-3 {
+            bottom: 20%;
+            left: 10%;
+            width: 70px;
+            animation: floatRobot 20s infinite ease-in-out;
+            animation-delay: 4s;
+        }
+        
+        .robot-4 {
+            bottom: 30%;
+            right: 15%;
+            width: 50px;
+            animation: floatRobot 16s infinite ease-in-out;
+            animation-delay: 1s;
+        }
+        
+        .robot-5 {
+            top: 45%;
+            left: 15%;
+            width: 65px;
+            animation: floatRobot 17s infinite ease-in-out;
+            animation-delay: 3s;
+        }
+        
+        .robot-6 {
+            top: 60%;
+            right: 5%;
+            width: 55px;
+            animation: floatRobot 19s infinite ease-in-out;
+            animation-delay: 5s;
+        }
+        
+        .hi-robot {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 100px;
+            z-index: 100;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .hi-robot:hover {
+            transform: scale(1.1);
         }
 
         /* About Section */
         .section {
             padding: 100px 0;
+            position: relative;
         }
 
         .section-header {
@@ -309,19 +379,19 @@
         }
 
         .skill {
-            background: rgba(100, 255, 218, 0.1);
+            background: rgba(0, 183, 195, 0.1);
             padding: 10px 20px;
             border-radius: 50px;
             color: var(--secondary);
             font-size: clamp(0.8rem, 1.5vw, 1rem);
-            border: 1px solid rgba(100, 255, 218, 0.2);
+            border: 1px solid rgba(0, 183, 195, 0.2);
             transition: var(--transition);
         }
 
         .skill:hover {
             transform: translateY(-5px);
-            background: rgba(100, 255, 218, 0.2);
-            box-shadow: 0 5px 15px rgba(100, 255, 218, 0.2);
+            background: rgba(0, 183, 195, 0.2);
+            box-shadow: 0 5px 15px rgba(0, 183, 195, 0.2);
         }
 
         .about-img {
@@ -350,7 +420,7 @@
         }
 
         .stat-item {
-            background: rgba(10, 25, 47, 0.4);
+            background: rgba(0, 56, 101, 0.4);
             padding: 20px;
             border-radius: 15px;
             text-align: center;
@@ -359,7 +429,7 @@
 
         .stat-item:hover {
             transform: translateY(-5px);
-            background: rgba(10, 25, 47, 0.6);
+            background: rgba(0, 56, 101, 0.6);
         }
 
         .stat-number {
@@ -389,12 +459,14 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 3;
         }
 
         .project-card:hover {
             transform: translateY(-15px);
-            box-shadow: 0 20px 40px rgba(100, 255, 218, 0.1);
-            border-color: rgba(100, 255, 218, 0.3);
+            box-shadow: 0 20px 40px rgba(0, 183, 195, 0.1);
+            border-color: rgba(0, 183, 195, 0.3);
         }
 
         .project-header {
@@ -407,7 +479,7 @@
         .project-icon {
             width: 60px;
             height: 60px;
-            background: rgba(100, 255, 218, 0.1);
+            background: rgba(0, 183, 195, 0.1);
             border-radius: 15px;
             display: flex;
             align-items: center;
@@ -439,12 +511,12 @@
         }
 
         .tech-item {
-            background: rgba(100, 255, 218, 0.05);
+            background: rgba(0, 183, 195, 0.05);
             padding: 8px 16px;
             border-radius: 50px;
             font-size: clamp(0.8rem, 1.5vw, 0.9rem);
             color: var(--secondary);
-            border: 1px solid rgba(100, 255, 218, 0.1);
+            border: 1px solid rgba(0, 183, 195, 0.1);
         }
 
         /* Services Section */
@@ -463,19 +535,21 @@
             transition: var(--transition);
             border: 1px solid rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
+            position: relative;
+            z-index: 3;
         }
 
         .service-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 35px rgba(100, 255, 218, 0.1);
-            border-color: rgba(100, 255, 218, 0.3);
+            box-shadow: 0 15px 35px rgba(0, 183, 195, 0.1);
+            border-color: rgba(0, 183, 195, 0.3);
         }
 
         .service-icon {
             width: 80px;
             height: 80px;
             margin: 0 auto 25px;
-            background: rgba(100, 255, 218, 0.1);
+            background: rgba(0, 183, 195, 0.1);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -498,9 +572,12 @@
 
         /* Connect Section */
         .connect {
-            background: rgba(10, 25, 47, 0.3);
-            border-top: 1px solid rgba(100, 255, 218, 0.1);
-            border-bottom: 1px solid rgba(100, 255, 218, 0.1);
+            background: rgba(0, 56, 101, 0.3);
+            border-top: 1px solid rgba(0, 183, 195, 0.1);
+            border-bottom: 1px solid rgba(0, 183, 195, 0.1);
+            position: relative;
+            z-index: 2;
+            padding: 80px 0;
         }
 
         .connect-content {
@@ -535,11 +612,11 @@
         }
 
         .social-link:hover {
-            background: rgba(100, 255, 218, 0.1);
+            background: rgba(0, 183, 195, 0.1);
             color: var(--secondary);
             transform: translateY(-10px);
             border-color: var(--secondary);
-            box-shadow: 0 15px 30px rgba(100, 255, 218, 0.2);
+            box-shadow: 0 15px 30px rgba(0, 183, 195, 0.2);
         }
 
         .social-name {
@@ -555,6 +632,8 @@
             text-align: center;
             color: var(--gray);
             font-size: 1rem;
+            position: relative;
+            z-index: 2;
         }
 
         .footer-logo {
@@ -569,7 +648,7 @@
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            background: url('https://instagram.fdel25-4.fna.fbcdn.net/v/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?stp=dst-jpg_s320x320&_nc_ht=instagram.fdel25-4.fna.fbcdn.net&_nc_cat=1&_nc_ohc=Z2XwU3Qw4gwAX9KbF3U&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfD7eLd0Vl8x8C6tVtFQyCvYJ3P6f0wV5k8I0B8iS3cFZ0aA&oe=64F3C0F2&_nc_sid=8b3546') center/cover;
+            background: #0078d7 url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="%230078d7"/><text x="12" y="16" font-family="Arial" font-size="12" fill="white" text-anchor="middle">VS</text></svg>') center/cover;
             border: 1px solid var(--secondary);
         }
 
@@ -589,7 +668,7 @@
         .copyright {
             margin-top: 30px;
             padding-top: 20px;
-            border-top: 1px solid rgba(100, 255, 218, 0.1);
+            border-top: 1px solid rgba(0, 183, 195, 0.1);
             font-size: clamp(0.8rem, 1.5vw, 0.9rem);
         }
 
@@ -603,6 +682,24 @@
             }
             100% {
                 transform: translateY(-50%);
+            }
+        }
+        
+        @keyframes floatRobot {
+            0% {
+                transform: translate(0, 0);
+            }
+            25% {
+                transform: translate(20px, -20px);
+            }
+            50% {
+                transform: translate(0, 0);
+            }
+            75% {
+                transform: translate(-20px, 20px);
+            }
+            100% {
+                transform: translate(0, 0);
             }
         }
 
@@ -628,6 +725,16 @@
             .hero-btns {
                 justify-content: center;
             }
+            
+            .robot {
+                display: none;
+            }
+            
+            .hi-robot {
+                width: 80px;
+                bottom: 20px;
+                right: 20px;
+            }
         }
 
         @media (max-width: 768px) {
@@ -637,16 +744,18 @@
             
             nav ul {
                 position: fixed;
-                top: 85px;
+                top: 0;
                 left: 0;
                 width: 100%;
-                background: rgba(10, 25, 47, 0.95);
+                height: 100vh;
+                background: rgba(0, 56, 101, 0.95);
                 backdrop-filter: blur(10px);
                 flex-direction: column;
                 align-items: center;
+                justify-content: center;
                 padding: 20px 0;
-                gap: 25px;
-                transform: translateY(-150%);
+                gap: 30px;
+                transform: translateY(-100%);
                 transition: var(--transition);
             }
             
@@ -666,13 +775,14 @@
             .stats-grid {
                 grid-template-columns: 1fr;
             }
+            
+            .hero-btns {
+                flex-direction: column;
+                align-items: center;
+            }
         }
 
         @media (max-width: 576px) {
-            .hero-btns {
-                flex-direction: column;
-            }
-            
             .project-header {
                 flex-direction: column;
                 text-align: center;
@@ -685,10 +795,30 @@
             .service-card {
                 padding: 30px 20px;
             }
+            
+            .social-links {
+                gap: 15px;
+            }
+            
+            .social-link {
+                width: 70px;
+                height: 70px;
+            }
         }
     </style>
 </head>
 <body>
+    <!-- Floating Robots -->
+    <img src="https://media.tenor.com/0AVbKGY_MxMAAAAi/robot-waving.gif" class="robot robot-1" alt="Robot">
+    <img src="https://media.tenor.com/3AA9wOeU5vYAAAAi/robot-dancing.gif" class="robot robot-2" alt="Robot">
+    <img src="https://media.tenor.com/4S4eXpSJ5NkAAAAi/robot.gif" class="robot robot-3" alt="Robot">
+    <img src="https://media.tenor.com/0AVbKGY_MxMAAAAi/robot-waving.gif" class="robot robot-4" alt="Robot">
+    <img src="https://media.tenor.com/3AA9wOeU5vYAAAAi/robot-dancing.gif" class="robot robot-5" alt="Robot">
+    <img src="https://media.tenor.com/4S4eXpSJ5NkAAAAi/robot.gif" class="robot robot-6" alt="Robot">
+    
+    <!-- Hi Robot -->
+    <img src="https://media.tenor.com/0AVbKGY_MxMAAAAi/robot-waving.gif" class="hi-robot" alt="Hi Robot">
+
     <!-- Header with Navigation -->
     <header id="header">
         <div class="container nav-container">
@@ -1026,6 +1156,22 @@
         
         // Initial check
         animateOnScroll();
+        
+        // Robot game
+        const hiRobot = document.querySelector('.hi-robot');
+        let score = 0;
+        
+        hiRobot.addEventListener('click', () => {
+            score++;
+            if(score === 5) {
+                alert('🎉 You found the secret robot game! 🎉');
+                hiRobot.src = 'https://media.tenor.com/3AA9wOeU5vYAAAAi/robot-dancing.gif';
+                setTimeout(() => {
+                    hiRobot.src = 'https://media.tenor.com/0AVbKGY_MxMAAAAi/robot-waving.gif';
+                    score = 0;
+                }, 3000);
+            }
+        });
     </script>
 </body>
 </html>
