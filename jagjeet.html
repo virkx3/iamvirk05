@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09090c">
+  <meta name="description" content="Jagjeet Virk Wedding Films — cinematic wedding films, highlights and memories crafted to last a lifetime.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jagjeet Virk | Wedding Films">
+  <meta property="og:description" content="A story to remember. Explore the wedding film collection.">
+  <meta property="og:image" content="assets/wedding-cover.png">
+  <title>Jagjeet Virk | Wedding Films</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#09090c;--panel:#121116;--muted:#b7b0b6;--text:#fbf7f5;--pink:#ed78ad;--gold:#d9b77a;--line:rgba(255,255,255,.13)}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:"DM Sans",sans-serif;line-height:1.65}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+    .topbar{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+    .brand{display:flex;align-items:center;gap:12px}
+    .monogram{height:42px;width:42px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-family:"Cormorant Garamond",serif;font-size:21px}
+    .brandname{font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:700}
+    .brandname span{display:block;color:var(--muted);font-size:9px;letter-spacing:.27em;font-weight:500;margin-top:2px}
+    .nav{display:flex;gap:27px;color:#d4ccd1;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+    .nav a:hover{color:var(--pink)}
+    .hero{position:relative;min-height:650px;display:flex;align-items:center;overflow:hidden;border-bottom:1px solid var(--line)}
+    .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,9,12,.96) 0%,rgba(9,9,12,.84) 35%,rgba(9,9,12,.25) 75%,rgba(9,9,12,.2) 100%),linear-gradient(0deg,var(--bg),transparent 22%),url("assets/wedding-cover.png") center/cover no-repeat;opacity:.95}
+    .hero-content{position:relative;z-index:1;width:min(660px,100%);padding:90px 0}
+    .eyebrow{display:flex;align-items:center;gap:12px;color:var(--gold);font-size:11px;letter-spacing:.28em;text-transform:uppercase}
+    .eyebrow:before{content:"";width:38px;height:1px;background:var(--gold)}
+    h1,h2,h3{font-family:"Cormorant Garamond",serif;font-weight:500;line-height:.98;margin:0}
+    h1{font-size:clamp(56px,8vw,104px);letter-spacing:-.035em;margin:24px 0}
+    h1 em{color:var(--pink);font-weight:400}
+    .hero p{max-width:465px;color:#e0d9dd;font-size:15px;line-height:1.9}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:49px;padding:0 21px;font-size:11px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;border:1px solid var(--gold);transition:.2s}
+    .btn-primary{background:var(--gold);color:#17110a}
+    .btn-primary:hover{background:#f0d29b;transform:translateY(-2px)}
+    .btn-outline{background:rgba(12,10,12,.38);color:var(--text);border-color:rgba(255,255,255,.42)}
+    .btn-outline:hover{border-color:var(--pink);color:var(--pink)}
+    .scroll-note{position:absolute;right:0;bottom:32px;color:#c5b9bf;font-size:10px;letter-spacing:.2em;text-transform:uppercase;writing-mode:vertical-rl}
+    .intro{padding:100px 0 82px;text-align:center}
+    .section-kicker{color:var(--pink);font-size:10px;letter-spacing:.3em;text-transform:uppercase}
+    h2{font-size:clamp(38px,5vw,62px);margin:17px 0 18px}
+    .intro p{max-width:640px;margin:0 auto;color:var(--muted);font-size:14px}
+    .ornament{width:92px;height:1px;background:var(--gold);margin:28px auto;position:relative}
+    .ornament:after{content:"✦";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:var(--bg);color:var(--gold);padding:0 9px;font-size:12px}
+    .collection{padding:25px 0 100px}
+    .collection-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:26px}
+    .collection-head h2{font-size:clamp(36px,4vw,52px);margin:12px 0 0}
+    .collection-head p{max-width:360px;color:var(--muted);font-size:13px;margin:0}
+    .feature-card{display:grid;grid-template-columns:1.2fr .8fr;background:var(--panel);border:1px solid var(--line);overflow:hidden}
+    .feature-image{min-height:350px;background:url("assets/wedding-cover.png") center/cover no-repeat;position:relative}
+    .feature-image:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.32),transparent 55%)}
+    .feature-info{padding:clamp(28px,5vw,58px);display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+    .tag{font-size:10px;color:var(--gold);letter-spacing:.22em;text-transform:uppercase;border:1px solid rgba(217,183,122,.45);padding:7px 10px}
+    .feature-info h3{font-size:clamp(34px,4vw,49px);margin:22px 0 13px}
+    .feature-info p{font-size:13px;color:var(--muted);margin:0 0 25px}
+    .family-section{padding:20px 0 90px}.family-intro{color:var(--muted);font-size:13px;max-width:650px}.family-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-top:28px}.family-card{border:1px solid var(--line);background:var(--panel);padding:22px}.family-role{font-size:10px;color:var(--gold);letter-spacing:.18em;text-transform:uppercase}.family-card h3{font-size:25px;margin:13px 0 5px;line-height:1.1}.family-card p{font-size:12px;color:var(--muted);margin:0}.family-note{font-size:11px;color:#9f969d;margin-top:20px}.services{padding:76px 0;background:#100e13;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}
+    .service{padding:27px 24px;border:1px solid var(--line);background:rgba(255,255,255,.018)}
+    .service .num{font-size:11px;color:var(--gold);letter-spacing:.2em}
+    .service h3{font-size:30px;margin:18px 0 10px}
+    .service p{font-size:12px;color:var(--muted);margin:0}
+    .closing{text-align:center;padding:100px 0}
+    .closing h2{max-width:720px;margin:18px auto}
+    .closing p{color:var(--muted);font-size:14px;margin:0 auto 28px;max-width:520px}
+    footer{border-top:1px solid var(--line);padding:24px 0;color:#9f969d;font-size:11px}
+    .footer-inner{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+    .footer-brand{color:var(--text);letter-spacing:.12em;text-transform:uppercase}
+    @media(max-width:760px){
+      .wrap{width:min(100% - 30px,1160px)}
+      .topbar{height:70px}.nav{gap:13px;font-size:10px}.nav a:nth-child(2){display:none}
+      .hero{min-height:630px;align-items:flex-end}
+      .hero:before{background:linear-gradient(0deg,rgba(9,9,12,.98) 0%,rgba(9,9,12,.82) 38%,rgba(9,9,12,.14) 100%),url("assets/wedding-cover.png") 58% center/cover no-repeat}
+      .hero-content{padding:240px 0 70px}
+      .hero p{font-size:14px}
+      .scroll-note{display:none}
+      .intro{padding:72px 0 58px}
+      .collection{padding:10px 0 70px}
+      .collection-head{display:block}.collection-head p{margin-top:14px}
+      .feature-card{grid-template-columns:1fr}.feature-image{min-height:250px}
+      .family-section{padding:0 0 65px}.family-grid{grid-template-columns:1fr}.services{padding:60px 0}.services-grid{grid-template-columns:1fr}
+      .closing{padding:75px 0}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+  </style>
+</head>
+<body>
+  <header class="wrap topbar">
+    <a class="brand" href="#home" aria-label="Jagjeet Virk Wedding Films home">
+      <span class="monogram">JV</span>
+      <span class="brandname">Jagjeet Virk<span>Wedding Films</span></span>
+    </a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#story">Our approach</a>
+      <a href="#families">Families</a><a href="#services">What we create</a>
+      <a href="#collection">Collection</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap">
+        <div class="hero-content">
+          <div class="eyebrow">Wedding Films · Punjab, India</div>
+          <h1>Jagjeet <em>Weds</em><br>Manjeet.</h1>
+          <p>Celebrating Jagjeet & Manjeet — a beautiful beginning, surrounded by family, blessings and moments to cherish for a lifetime.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="https://drive.google.com/drive/folders/1c_RL2-A-brh2W21Qx6nUmnwoDg7dQq1t" target="_blank" rel="noopener">View Wedding Collection <span aria-hidden="true">↗</span></a>
+            <a class="btn btn-outline" href="#story">Discover the story <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-note">Memories made timeless</div>
+    </section>
+
+    <section class="intro wrap" id="story">
+      <div class="section-kicker">Jagjeet Weds Manjeet</div>
+      <h2>Two families.<br><em style="color:var(--pink)">One beautiful beginning.</em></h2>
+      <div class="ornament"></div>
+      <p>With the blessings of their families, Jagjeet and Manjeet begin a new chapter. This collection preserves the people, traditions and heartfelt moments that made their wedding special.</p>
+    </section>
+
+    <section class="collection wrap" id="collection">
+      <div class="collection-head">
+        <div><div class="section-kicker">The wedding collection</div><h2>Relive the moments.</h2></div>
+        <p>Open the collection to explore the wedding videos and memories shared with you.</p>
+      </div>
+      <article class="feature-card">
+        <div class="feature-image" role="img" aria-label="Wedding couple in elegant wedding attire"></div>
+        <div class="feature-info">
+          <span class="tag">Private collection link</span>
+          <h3>Wedding Films<br>& Highlights</h3>
+          <p>Find the wedding films, highlights and special moments in one place. The collection opens securely through Google Drive sharing settings.</p>
+          <a class="btn btn-primary" href="https://drive.google.com/drive/folders/1c_RL2-A-brh2W21Qx6nUmnwoDg7dQq1t" target="_blank" rel="noopener">Open Google Drive <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+    </section>
+
+    <section class="family-section wrap" id="families">
+      <div class="section-kicker">With love & blessings</div>
+      <h2>The families behind the celebration.</h2>
+      <p class="family-intro">A wedding brings two families together. With gratitude, we honour the loved ones named in the wedding film.</p>
+      <div class="family-grid">
+        <article class="family-card"><span class="family-role">Groom's Parents</span><h3>S. Sukhdev Singh Virk</h3><p>Sdn. Manjeet Kaur</p></article>
+        <article class="family-card"><span class="family-role">Brother & Bhabi</span><h3>S. Balraj Singh Virk</h3><p>Sdn. Jaswinder Kaur</p></article>
+        <article class="family-card"><span class="family-role">Sister & Jija</span><h3>S. Amrik Singh Sran</h3><p>Sdn. Ramandeep Kaur</p></article>
+        <article class="family-card"><span class="family-role">Mama Ji</span><h3>Sukhdev Singh Sandhu</h3><p>Nishan Singh Sandhu</p></article>
+        <article class="family-card"><span class="family-role">Chacha & Chachi</span><h3>S. Mukhtyar Singh Virk</h3><p>Sdn. Virpal Kaur</p></article>
+        <article class="family-card"><span class="family-role">Brother</span><h3>Simranjit Virk</h3><p>Nishan Virk</p></article>
+        <article class="family-card"><span class="family-role">Family</span><h3>Gurnam Singh Virk · Barkat Kaur</h3><p>Jagpreet Singh Sran · Jagmeet Kaur</p></article>
+        <article class="family-card"><span class="family-role">Bride's Parents</span><h3>S. Chamkaur Singh</h3><p>Sdn. Surinder Kaur</p></article>
+        <article class="family-card"><span class="family-role">Family</span><h3>S. Jugraj Singh</h3><p>Sdn. Sarabjeet Kaur</p></article>
+        <article class="family-card"><span class="family-role">Brother & Sister</span><h3>Harjinder Singh</h3><p>Navdeep Kaur · Ramandeep Kaur</p></article>
+      </div>
+      <p class="family-note">Family names have been transcribed from the supplied wedding video. Please double-check spellings and relationships before publishing.</p>
+    </section>
+
+    <section class="services" id="services">
+      <div class="wrap">
+        <div class="section-kicker">Crafted around your memories</div>
+        <h2>Every chapter matters.</h2>
+        <div class="services-grid">
+          <article class="service"><div class="num">01 / FILM</div><h3>Wedding Films</h3><p>The celebration, the people and the moments that tell your story.</p></article>
+          <article class="service"><div class="num">02 / HIGHLIGHTS</div><h3>Cinematic Highlights</h3><p>A beautifully paced short film that brings the feeling of the day back.</p></article>
+          <article class="service"><div class="num">03 / MEMORIES</div><h3>Wedding Moments</h3><p>Special rituals, candid emotions and details worth remembering.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing wrap">
+      <div class="section-kicker">Keep the memories close</div>
+      <h2>Some days deserve to be watched <em style="color:var(--pink)">again and again.</em></h2>
+      <p>Step into the collection and revisit the moments that made the day unforgettable.</p>
+      <a class="btn btn-primary" href="https://drive.google.com/drive/folders/1c_RL2-A-brh2W21Qx6nUmnwoDg7dQq1t" target="_blank" rel="noopener">Explore the films <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <span class="footer-brand">Jagjeet Weds Manjeet · Designed by iamVirkk</span>
+      <span>Made for memories that last.</span>
+    </div>
+  </footer>
+</body>
+</html>
