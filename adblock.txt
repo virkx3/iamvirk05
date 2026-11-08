@@ -1,8 +1,4 @@
-ironsource.mobi
-ads.vk.com
-vk.com/rtrg
-app.usercentrics.eu
-prf.hn
+vk.comrtrg
 appmetrica.yandex.ru
 sessions.bugsnag.com
 adtago.s3.amazonaws.com
@@ -252,3 +248,8 @@ bea4.v.fwmrm.net
 cd.connatix.com
 capi.connatix.com
 vid.connatix.com
+ironsource.mobi
+ads.vk.com
+vk.comrtrg
+app.usercentrics.eu
+prf.hn
