@@ -1,4 +1,4 @@
-vk.comrtrg
+vk.com/rtrg
 appmetrica.yandex.ru
 sessions.bugsnag.com
 adtago.s3.amazonaws.com
